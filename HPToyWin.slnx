@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HPToy.Core/HPToy.Core.csproj" />
+  <Project Path="HPToy.Win/HPToy.Win.csproj" />
+</Solution>
