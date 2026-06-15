@@ -1,0 +1,32 @@
+<Window x:Class="HPToy.Win.Dialogs.PairingCodeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="240" Width="400"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Icon="/Assets/hptoy.png">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="OldLabel" Grid.Row="0" Margin="0,0,0,4"/>
+        <TextBox x:Name="OldBox" Grid.Row="1" Margin="0,0,0,10"/>
+
+        <TextBlock x:Name="NewLabel" Grid.Row="2" Margin="0,0,0,4"/>
+        <TextBox x:Name="NewBox" Grid.Row="3" Margin="0,0,0,10"/>
+
+        <TextBlock x:Name="ConfirmLabel" Grid.Row="4" Margin="0,0,0,4"/>
+        <TextBox x:Name="ConfirmBox" Grid.Row="5" Margin="0,0,0,12"/>
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button x:Name="OkBtn" Width="88" Margin="0,0,8,0" IsDefault="True" Click="Ok_Click"/>
+            <Button x:Name="CancelBtn" Width="88" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+<UserControl x:Class="HPToy.Win.Views.CompressorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="16" MaxWidth="560">
+            <TextBlock x:Name="AmountTitleLabel" FontSize="16" Margin="0,0,0,8"/>
+            <DockPanel Margin="0,0,0,16">
+                <TextBlock x:Name="AmountLabel" Width="80" VerticalAlignment="Center"/>
+                <Slider x:Name="AmountSlider" Minimum="0" Maximum="100" ValueChanged="AmountSlider_ValueChanged"/>
+            </DockPanel>
+
+            <TextBlock x:Name="ActivePointLabel" Margin="0,0,0,4"/>
+            <ComboBox x:Name="PointCombo" Margin="0,0,0,12" SelectionChanged="PointCombo_SelectionChanged"/>
+
+            <TextBlock x:Name="InputTitleLabel"/>
+            <DockPanel Margin="0,4,0,8">
+                <TextBlock x:Name="InputLabel" Width="80"/>
+                <Slider x:Name="InputSlider" Minimum="-120" Maximum="0" ValueChanged="PointSlider_ValueChanged"/>
+            </DockPanel>
+            <TextBlock x:Name="OutputTitleLabel"/>
+            <DockPanel Margin="0,4,0,16">
+                <TextBlock x:Name="OutputLabel" Width="80"/>
+                <Slider x:Name="OutputSlider" Minimum="-120" Maximum="0" ValueChanged="PointSlider_ValueChanged"/>
+            </DockPanel>
+
+            <TextBlock x:Name="TimeConstTitleLabel" FontWeight="Bold" Margin="0,8,0,8"/>
+            <TextBlock x:Name="EnergyTitleLabel"/>
+            <DockPanel Margin="0,4,0,8">
+                <TextBlock x:Name="EnergyLabel" Width="80"/>
+                <Slider x:Name="EnergySlider" Minimum="0.05" Maximum="50" ValueChanged="TimeConst_ValueChanged"/>
+            </DockPanel>
+            <TextBlock x:Name="AttackTitleLabel"/>
+            <DockPanel Margin="0,4,0,8">
+                <TextBlock x:Name="AttackLabel" Width="80"/>
+                <Slider x:Name="AttackSlider" Minimum="1" Maximum="200" ValueChanged="TimeConst_ValueChanged"/>
+            </DockPanel>
+            <TextBlock x:Name="DecayTitleLabel"/>
+            <DockPanel Margin="0,4,0,8">
+                <TextBlock x:Name="DecayLabel" Width="80"/>
+                <Slider x:Name="DecaySlider" Minimum="10" Maximum="10000" ValueChanged="TimeConst_ValueChanged"/>
+            </DockPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

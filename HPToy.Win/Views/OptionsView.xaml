@@ -1,0 +1,59 @@
+<UserControl x:Class="HPToy.Win.Views.OptionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="16" MaxWidth="520">
+            <TextBlock x:Name="LanguageTitleLabel" Margin="0,0,0,4"/>
+            <ComboBox x:Name="LanguageCombo" Margin="0,0,0,16" SelectionChanged="Language_Changed"/>
+
+            <TextBlock x:Name="DeviceNameLabel" Margin="0,0,0,4"/>
+            <DockPanel Margin="0,0,0,12">
+                <Button x:Name="SetNameBtn" Width="72" DockPanel.Dock="Right" Click="SetName_Click"/>
+                <TextBox x:Name="DeviceNameBox"/>
+            </DockPanel>
+            <TextBlock x:Name="MacText" Margin="0,0,0,12"/>
+
+            <TextBlock x:Name="DeviceActionsTitle" FontWeight="SemiBold" Margin="0,12,0,6"/>
+
+            <Button x:Name="PairingCodeBtn" Margin="0,4" Padding="10,8" Click="PairingCode_Click"/>
+            <Button x:Name="RestoreFactoryBtn" Margin="0,4" Padding="10,8" Click="RestoreFactory_Click"/>
+            <Button x:Name="ResetSettingsBtn" Margin="0,4" Padding="10,8" MinHeight="36"
+                    Background="#3A5F8A" Foreground="White" Click="ResetSettings_Click"/>
+
+            <Separator Margin="0,12"/>
+
+            <TextBlock x:Name="AutoOffTitleLabel" Margin="0,0,0,4"/>
+            <TextBlock x:Name="AutoOffHintLabel" Foreground="Gray" FontSize="11" Margin="0,0,0,6"
+                       TextWrapping="Wrap"/>
+            <DockPanel Margin="0,0,0,8">
+                <TextBlock x:Name="AutoOffLabel" Width="80"/>
+                <Slider x:Name="AutoOffSlider" Minimum="0" Maximum="100" ValueChanged="AutoOff_ValueChanged"/>
+            </DockPanel>
+
+            <TextBlock x:Name="ClipTitleLabel" Margin="0,8,0,4"/>
+            <TextBlock x:Name="ClipHintLabel" Foreground="Gray" FontSize="11" Margin="0,0,0,6"
+                       TextWrapping="Wrap"/>
+            <DockPanel Margin="0,0,0,8">
+                <TextBlock x:Name="ClipLabel" Width="80"/>
+                <Slider x:Name="ClipSlider" Minimum="0" Maximum="100" ValueChanged="Clip_ValueChanged"/>
+            </DockPanel>
+            <Button x:Name="EnergySyncBtn" Margin="0,0,0,12" Padding="8" Click="EnergySync_Click"/>
+
+            <TextBlock x:Name="AdvertiseTitleLabel" Margin="0,0,0,4"/>
+            <ComboBox x:Name="AdvertiseCombo" Margin="0,0,0,12" SelectionChanged="Advertise_Changed"/>
+
+            <TextBlock x:Name="OutputModeTitleLabel" Margin="0,8,0,4" FontWeight="SemiBold"/>
+            <ComboBox x:Name="OutputModeCombo" Margin="0,0,0,12" MinHeight="28"
+                      SelectionChanged="OutputMode_Changed"/>
+
+            <CheckBox x:Name="AmModeCheck" Margin="0,0,0,6"
+                      Checked="AmMode_Changed" Unchecked="AmMode_Changed"/>
+            <Button x:Name="AmModeStoreBtn" Margin="0,0,0,12" Padding="8"
+                    HorizontalAlignment="Left" Click="AmModeStore_Click"/>
+
+            <Separator Margin="0,12"/>
+            <TextBlock x:Name="AboutLine1Label" Margin="0,4"/>
+            <TextBlock x:Name="AboutLine2Label" Foreground="Gray"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

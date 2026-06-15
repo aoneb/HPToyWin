@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Preset Type="HiFiToy" Version="1.0" >
+	<Filters Address="81" Address1="88" >
+		<Biquad Address="81" Address1="88" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>1.0010931491851807</B0>
+			<B1>-1.9980002641677856</B1>
+			<B2>0.996910035610199</B2>
+			<A1>1.9980002641677856</A1>
+			<A2>-0.9980030655860901</A2>
+		</Biquad>
+		<Biquad Address="82" Address1="89" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>0.9973727464675903</B0>
+			<B1>-1.9821512699127197</B1>
+			<B2>0.9849115610122681</B2>
+			<A1>1.9821512699127197</A1>
+			<A2>-0.9822843074798584</A2>
+		</Biquad>
+		<Biquad Address="83" Address1="90" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>1.007808804512024</B0>
+			<B1>-1.8655054569244385</B1>
+			<B2>0.9345366358757019</B2>
+			<A1>1.8655054569244385</A1>
+			<A2>-0.9423453211784363</A2>
+		</Biquad>
+		<Biquad Address="84" Address1="91" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>0.9878625869750977</B0>
+			<B1>-1.785357117652893</B1>
+			<B2>0.9208928346633911</B2>
+			<A1>1.785357117652893</A1>
+			<A2>-0.9087554216384888</A2>
+		</Biquad>
+		<Biquad Address="85" Address1="92" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>1.0060075521469116</B0>
+			<B1>-1.768072485923767</B1>
+			<B2>0.9483984112739563</B2>
+			<A1>1.768072485923767</A1>
+			<A2>-0.9544061422348022</A2>
+		</Biquad>
+		<Biquad Address="86" Address1="93" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>1.0630260705947876</B0>
+			<B1>-1.5752313137054443</B1>
+			<B2>0.776236355304718</B2>
+			<A1>1.5752313137054443</A1>
+			<A2>-0.8392623662948608</A2>
+		</Biquad>
+		<Biquad Address="87" Address1="94" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>3</Type>
+			<MaxFreq>20000</MaxFreq>
+			<MinFreq>20</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>1.0434974431991577</B0>
+			<B1>-1.3879423141479492</B1>
+			<B2>0.8182500600814819</B2>
+			<A1>1.3879423141479492</A1>
+			<A2>-0.8617475628852844</A2>
+		</Biquad>
+	</Filters>
+	<Volume Address="217" >
+		<MaxDb>0.0</MaxDb>
+		<MinDb>-81.0</MinDb>
+		<Db>-40.0</Db>
+	</Volume>
+	<BassTreble Address="218" >
+		<enabledCh0>1.0</enabledCh0>
+		<enabledCh1>1.0</enabledCh1>
+		<enabledCh2>0.0</enabledCh2>
+		<enabledCh3>0.0</enabledCh3>
+		<enabledCh4>0.0</enabledCh4>
+		<enabledCh5>0.0</enabledCh5>
+		<enabledCh6>0.0</enabledCh6>
+		<enabledCh7>0.0</enabledCh7>
+		<BassTrebleChannel Channel="0" >
+			<BassFreq>1</BassFreq>
+			<BassDb>0</BassDb>
+			<TrebleFreq>3</TrebleFreq>
+			<TrebleDb>0</TrebleDb>
+			<maxBassDb>12</maxBassDb>
+			<minBassDb>-12</minBassDb>
+			<maxTrebleDb>12</maxTrebleDb>
+			<minTrebleDb>-12</minTrebleDb>
+		</BassTrebleChannel>
+		<BassTrebleChannel Channel="1" >
+			<BassFreq>0</BassFreq>
+			<BassDb>0</BassDb>
+			<TrebleFreq>0</TrebleFreq>
+			<TrebleDb>0</TrebleDb>
+			<maxBassDb>18</maxBassDb>
+			<minBassDb>-18</minBassDb>
+			<maxTrebleDb>18</maxTrebleDb>
+			<minTrebleDb>-18</minTrebleDb>
+		</BassTrebleChannel>
+		<BassTrebleChannel Channel="2" >
+			<BassFreq>0</BassFreq>
+			<BassDb>0</BassDb>
+			<TrebleFreq>0</TrebleFreq>
+			<TrebleDb>0</TrebleDb>
+			<maxBassDb>18</maxBassDb>
+			<minBassDb>-18</minBassDb>
+			<maxTrebleDb>18</maxTrebleDb>
+			<minTrebleDb>-18</minTrebleDb>
+		</BassTrebleChannel>
+		<BassTrebleChannel Channel="3" >
+			<BassFreq>0</BassFreq>
+			<BassDb>0</BassDb>
+			<TrebleFreq>0</TrebleFreq>
+			<TrebleDb>0</TrebleDb>
+			<maxBassDb>18</maxBassDb>
+			<minBassDb>-18</minBassDb>
+			<maxTrebleDb>18</maxTrebleDb>
+			<minTrebleDb>-18</minTrebleDb>
+		</BassTrebleChannel>
+	</BassTreble>
+	<Loudness Address="145" >
+		<LG>-0.5</LG>
+		<LO>0.0</LO>
+		<Gain>0.0</Gain>
+		<Offset>0.0</Offset>
+		<Biquad Address="149" Address1="0" >
+			<HiddenGui>0</HiddenGui>
+			<Order>1</Order>
+			<Type>5</Type>
+			<MaxFreq>200</MaxFreq>
+			<MinFreq>30</MinFreq>
+			<MaxQ>10.0</MaxQ>
+			<MinQ>0.10000000149011612</MinQ>
+			<MaxDbVol>12.0</MaxDbVol>
+			<MinDbVol>-36.0</MinDbVol>
+			<B0>0.00199231319129467</B0>
+			<B1>0.0</B1>
+			<B2>-0.00199231319129467</B2>
+			<A1>1.996000051498413</A1>
+			<A2>-0.9960153698921204</A2>
+		</Biquad>
+	</Loudness>
+	<Drc Address="150" >
+		<enabledCh0>0.0</enabledCh0>
+		<enabledCh1>0.0</enabledCh1>
+		<enabledCh2>0.0</enabledCh2>
+		<enabledCh3>0.0</enabledCh3>
+		<enabledCh4>0.0</enabledCh4>
+		<enabledCh5>0.0</enabledCh5>
+		<enabledCh6>0.0</enabledCh6>
+		<enabledCh7>0.0</enabledCh7>
+		<evaluationCh0>2</evaluationCh0>
+		<evaluationCh1>2</evaluationCh1>
+		<evaluationCh2>0</evaluationCh2>
+		<evaluationCh3>0</evaluationCh3>
+		<evaluationCh4>0</evaluationCh4>
+		<evaluationCh5>0</evaluationCh5>
+		<evaluationCh6>0</evaluationCh6>
+		<evaluationCh7>0</evaluationCh7>
+		<DrcCoef Channel="0" >
+			<InputDb0>-120.0</InputDb0>
+			<OutputDb0>-120.0</OutputDb0>
+			<InputDb1>-72.0</InputDb1>
+			<OutputDb1>-72.0</OutputDb1>
+			<InputDb2>-24.0</InputDb2>
+			<OutputDb2>-24.0</OutputDb2>
+			<InputDb3>0.0</InputDb3>
+			<OutputDb3>-24.0</OutputDb3>
+		</DrcCoef>
+		<DrcCoef Channel="1" >
+			<InputDb0>-120.0</InputDb0>
+			<OutputDb0>-120.0</OutputDb0>
+			<InputDb1>-72.0</InputDb1>
+			<OutputDb1>-72.0</OutputDb1>
+			<InputDb2>-24.0</InputDb2>
+			<OutputDb2>-24.0</OutputDb2>
+			<InputDb3>0.0</InputDb3>
+			<OutputDb3>-24.0</OutputDb3>
+		</DrcCoef>
+		<DrcTimeConst Channel="0" >
+			<Energy>0.10000000149011612</Energy>
+			<Attack>10.0</Attack>
+			<Decay>100.0</Decay>
+		</DrcTimeConst>
+		<DrcTimeConst Channel="1" >
+			<Energy>0.10000000149011612</Energy>
+			<Attack>10.0</Attack>
+			<Decay>100.0</Decay>
+		</DrcTimeConst>
+	</Drc>
+</Preset>

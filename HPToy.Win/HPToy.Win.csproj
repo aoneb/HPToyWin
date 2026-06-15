@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Assets\hptoy.ico</ApplicationIcon>
+    <RootNamespace>HPToy.Win</RootNamespace>
+    <AssemblyName>HPToy</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HPToy.Core\HPToy.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presets\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="Assets\hptoy.png" />
+  </ItemGroup>
+  <Target Name="EmbedAppIcon" AfterTargets="Build">
+    <PropertyGroup>
+      <_AppExe>$(TargetDir)$(AssemblyName).exe</_AppExe>
+      <_MakeIco>$(MSBuildThisFileDirectory)..\scripts\MakeIco\MakeIco.csproj</_MakeIco>
+      <_AssetsIco>$(MSBuildProjectDirectory)\Assets\hptoy.ico</_AssetsIco>
+      <_AssetsPng>$(MSBuildProjectDirectory)\Assets\hptoy.png</_AssetsPng>
+      <_OutIco>$(TargetDir)hptoy.ico</_OutIco>
+      <_OutLnk>$(TargetDir)HPToy.lnk</_OutLnk>
+    </PropertyGroup>
+    <Exec Command="dotnet run --project &quot;$(_MakeIco)&quot; -- &quot;$(_AssetsPng)&quot; &quot;$(_AssetsIco)&quot;"
+          WorkingDirectory="$(MSBuildProjectDirectory)" />
+    <Exec Command="dotnet run --project &quot;$(_MakeIco)&quot; -- embed &quot;$(_AppExe)&quot; &quot;$(_AssetsIco)&quot;"
+          WorkingDirectory="$(MSBuildProjectDirectory)"
+          Condition="Exists('$(_AppExe)')" />
+    <Copy SourceFiles="$(_AssetsIco)" DestinationFiles="$(_OutIco)" SkipUnchangedFiles="true"
+          Condition="Exists('$(_AssetsIco)')" />
+    <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;$s=New-Object -ComObject WScript.Shell; $l=$s.CreateShortcut('$(_OutLnk)'); $l.TargetPath='$(_AppExe)'; $l.WorkingDirectory='$(TargetDir)'; $l.IconLocation='$(_OutIco),0'; $l.Save()&quot;"
+          Condition="Exists('$(_AppExe)')" />
+  </Target>
+</Project>
